@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript Error Example</title>
+    </head>
+    <body>
+        <h1>Welcome to the Error Page</h1>
+        <script>
+            // Second error after 2 seconds
+            setTimeout(function () {
+                throw new Error("This is the second error, after 2 seconds!");
+            }, 2000);
+
+            // Third error after 4 seconds
+            setTimeout(function () {
+                throw new Error("This is the third error, after 4 seconds!");
+            }, 4000);
+
+            // Fourth error after 6 seconds
+            setTimeout(function () {
+                console.warn("This is the fourth error, after 6 seconds!");
+            }, 6000);
+        </script>
+    </body>
+</html>
